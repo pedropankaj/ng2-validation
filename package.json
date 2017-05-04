@@ -1,18 +1,18 @@
 {
   "name": "ng2-validation",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "description": "angular2 validation",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "test": "karma start ./karma.conf.js",
-    "dev": "webpack-dev-server --port 4001 --watch",
+    "dev": "node init && webpack-dev-server --port 4001 --watch",
     "example": "webpack --optimize-minimize",
     "ngc": "ngc",
     "prerollup": "rimraf bundles",
     "rollup": "rollup -c",
     "prebuild": "rimraf dist",
-    "build": "npm run ngc && npm run rollup",
+    "build": "node init && npm run ngc && npm run rollup",
     "prepublish": "npm run build"
   },
   "repository": {
